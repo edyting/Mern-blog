@@ -7,7 +7,7 @@ function Layout() {
   return (
     <div className='relative'>
         {/* navbar */}
-        <div className="">
+        <div className="relative">
         <Navbar/>
         </div>
         
