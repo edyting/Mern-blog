@@ -12,7 +12,7 @@ function Layout() {
         </div>
         
         {/* outlet */}
-        <div className="">
+        <div className="md:px-20 px-4 bg-gray-200 pt-4 pb-12">
             <Outlet/>
         </div>
 

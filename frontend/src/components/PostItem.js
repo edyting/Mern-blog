@@ -4,25 +4,30 @@ import PostAuthor from './PostAuthor';
 
 
 function PostItem({post}) {
+
+    //short the body rext of the card
+    const shortdesc = post.desc.length > 120? post.desc.substr(0,120)+'...': post.desc;
+    const shorttitle = post.title.length > 20? post.title.substr(0,20)+'...': post.title;
+
   return (
     <div>
-        <div className="">
-            <article className='bg-white p-1 rounded hover:shadow'>
+        <div className="w-full  rounded-xl">
+            <article className='bg-white  p-3 rounded-xl hover:shadow-xl'>
                 <div className="">
-                    <img src={post.thumbnail} alt={post.title} className='rounded overflow-hidden h-[16rem]' />
+                    <img src={post.thumbnail} alt={post.title} className='rounded overflow-hidden w-full h-[16rem]' />
                 </div>
-                <div className="mt-[1.5rem]">
-                   <div className="my-12">
+                <div className="mt-[1rem]">
+                   <div className="my-2 text-gray-900 font-bold ">
                    <Link to={`/posts/${post.id}`}>
-                    {post.title}
+                    {shorttitle}
                     </Link>
                    </div>
                     <p>
-                        {post.desc}
+                        {shortdesc}
                     </p>
-                    <div className="flex justify-between items-end mt-12">
+                    <div className="flex justify-between items-end mt-4 items-center">
                         <PostAuthor/>
-                        <Link to={`/posts/categories/${post.category}`} className='bg-[#f9f9f9] text-gray-900 rounded py-1 px-3 shadow'>
+                        <Link to={`/posts/categories/${post.category}`} className='bg-[#f9f9f9] text-gray-900 rounded py-1 px-3 hover:bg-gray-900 hover:text-white shadow'>
                             {post.category}
                         </Link>
                     </div>

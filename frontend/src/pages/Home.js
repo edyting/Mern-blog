@@ -4,7 +4,7 @@ import Post from '../components/Post';
 
 function Home() {
   return (
-    <div className='md:mx-20 mx-4 mt-4'>
+    <div className=''>
       <Post/>
     </div>
   )

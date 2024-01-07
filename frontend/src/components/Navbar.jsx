@@ -40,7 +40,7 @@ function Navbar() {
               <li className='hover:border-b-2 hover:border-solid hover:border-gray-900 transition-ease delay-[0.05s]'><Link to='/create'> Create Post </Link></li>
               <li className='hover:border-b-2 hover:border-solid hover:border-gray-900 transition-ease delay-[0.05s]'><Link to='/authors'> Authors </Link></li>
               <li className='hover:border-b-2 hover:border-solid hover:border-gray-900 transition-ease delay-[0.05s]'><Link to='/logout'> Logout </Link></li> 
-              <li className='flex items-center gap-3 text-slate-700'><Link to='/profile'> Manuel </Link> <Avatar src={avat}/> </li>
+              <li className='flex items-center gap-3 text-slate-700'><Link to='/profile/ghg'> Manuel </Link> <Avatar src={avat}/> </li>
               </ul>
               <div className="md:hidden" onClick={onClick}>
                 { isopen? <CloseOutlinedIcon/> : <MenuOutlinedIcon/>}

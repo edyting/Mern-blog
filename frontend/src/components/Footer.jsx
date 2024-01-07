@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <footer className='bg-gray-900 mt-12 pt-12'>
+    <footer className='bg-gray-900  pt-12'>
       <ul className='flex md:flex-rows flex-wrap items-center justify-center gap-4 mb-12 '>
         <li className='bg-gray-700 px-5 text-white p-2 rounded hover:bg-white hover:text-gray-900'>
           <Link to="/posts/categories/agriculture">Agriculture</Link>
